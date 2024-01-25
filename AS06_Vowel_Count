@@ -1,0 +1,30 @@
+word = input("enter your word of choice: ")
+
+
+a_count = 0 
+e_count = 0 
+i_count = 0 
+o_count = 0 
+u_count = 0 
+
+
+for letter in word: 
+  if letter == 'a' or letter == 'A':
+    a_count += 1 
+  elif letter == 'e' or letter =='E':
+    e_count += 1 
+  elif letter == 'i' or letter == 'I':
+    i_count += 1 
+  elif letter == 'o'or letter == 'O':
+    o_count += 1 
+  elif letter == 'u' or letter == 'U':
+    u_count += 1
+
+total = a_count + e_count + i_count + o_count + u_count 
+
+print("the total number of vowels in your word is: ", total) 
+print("a count", a_count)
+print("e count", e_count)
+print("i count", i_count)
+print("o count", o_count)
+print("u count", u_count)
