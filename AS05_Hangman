@@ -1,0 +1,39 @@
+import random 
+
+word_list = ["cat", "education", "computer", "science", "python", "hangman", "programming", "language", "algorithm", "variable", "function", "loop", "list", "dictionary", "string", "integer", "float", "boolean", "class", "object"]
+
+num = random.randint(0,20)
+
+word = word_list[num]
+
+letters_guessed = [] 
+guess =("")
+
+complete = False
+
+print (word)
+help = ("") 
+dashes = "-" * len(word)
+correct = False 
+control = help 
+
+while complete == False: 
+  guess = input("Guess a letter: """)
+  for i in range(len(word)): 
+    if guess == word[i]:
+      help = help + str(guess)
+      correct = True
+    
+    else: 
+      help = help + "-"
+    if correct == True:
+      letters_guessed.append(guess)
+  
+    if help == word: 
+      print("You guessed the word!")
+      complete = True
+    control = help 
+      
+  print("")
+  print(help)
+  print("")
