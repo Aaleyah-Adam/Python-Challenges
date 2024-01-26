@@ -1,0 +1,15 @@
+import random 
+
+fruit_array = ["apple", "bananas", "oranges", "pears", "grapes", "melon", "watermelon", "strawberry"]
+
+num = random.randint(0,7)
+
+symbols_array = ["$", "#", "@", "?"]
+symbol_num = random.randint(0,3)
+
+fruit = fruit_array[num]
+numbers = random.randint(1000,9999)
+symbol = symbols_array[symbol_num] + "*"
+
+
+print("Your password is: " + str(numbers) + fruit + symbol)
