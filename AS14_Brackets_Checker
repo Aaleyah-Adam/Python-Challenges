@@ -1,0 +1,18 @@
+def bracket_check(code): 
+  bracket_count = 0
+  for i in code: 
+    if i == ('"'): 
+      bracket_count += 1 
+
+  even = bracket_count % 2
+  if bracket_count % 2 == 0: 
+    even = True
+    print("Dont worry, you have the right amount of brackets!")
+    
+  else: 
+    even = False
+    print("Mmm, somethings incorrect here. You have an uneven number of brackets.")
+  print("You have " + str(bracket_count) + " brackets")
+
+code = input("Enter your code: ")
+bracket_check(code)
